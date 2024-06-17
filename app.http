@@ -72,18 +72,18 @@ Content-Type: application/json
 GET  http://localhost:4001/hotels
 ###
 GET  http://localhost:4001/hotels/hotel/6d6f4f47-f40f-40e3-8c97-bde4efea2d93
-token:
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYzNTAzOSwiZXhwIjoxNzE4NjM4NjM5fQ._ny7AzbTgDydsnCWvM3W4QY-_rfnSpG4J0J9KZDz7QU
 ###
 
 GET  http://localhost:4001/hotels/tour/491b239d-5e7a-4d7d-98cd-ed9934d912a4
-token:
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYzNTAzOSwiZXhwIjoxNzE4NjM4NjM5fQ._ny7AzbTgDydsnCWvM3W4QY-_rfnSpG4J0J9KZDz7QU
 ###
 DELETE http://localhost:4001/hotels/ced279f7-8521-4e4c-b859-4724eea7a8ad
-token:
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYzNTAzOSwiZXhwIjoxNzE4NjM4NjM5fQ._ny7AzbTgDydsnCWvM3W4QY-_rfnSpG4J0J9KZDz7QU
 
 ####
 PATCH http://localhost:4001/hotels/491b239d-5e7a-4d7d-98cd-ed9934d912a4
-token:
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYzNTAzOSwiZXhwIjoxNzE4NjM4NjM5fQ._ny7AzbTgDydsnCWvM3W4QY-_rfnSpG4J0J9KZDz7QU
 Content-Type: application/json
 
 {
