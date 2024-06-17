@@ -1,0 +1,95 @@
+POST  http://localhost:4001/tours
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYxMzQ0MiwiZXhwIjoxNzE4NjE3MDQyfQ.3nrxaMcDHD_it952--pYtCqhKqRxq81l4tRR1BuO5Qg
+Content-Type: application/json
+
+{
+    "Tourname":"Bonefire adventures",
+    "Tourimage":"https://cdn.pixabay.com/photo/2020/12/03/08/05/giraffe-5799824_640.jpg",
+    "TDestination":"Ambosseli game park",
+    "TDescription":"Experience nature at its best",
+    "TPrice":"35000"
+}
+
+#####
+
+GET http://localhost:4001/tours
+
+####
+GET http://localhost:4001/tours/491b239d-5e7a-4d7d-98cd-ed9934d912a4
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYxMzQ0MiwiZXhwIjoxNzE4NjE3MDQyfQ.3nrxaMcDHD_it952--pYtCqhKqRxq81l4tRR1BuO5Qg
+
+####
+
+DELETE  http://localhost:4001/tours/0a9fef36-5bba-46d6-913a-b6ba333d921a
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYxMzQ0MiwiZXhwIjoxNzE4NjE3MDQyfQ.3nrxaMcDHD_it952--pYtCqhKqRxq81l4tRR1BuO5Qg
+####
+
+PATCH   http://localhost:4001/tours/491b239d-5e7a-4d7d-98cd-ed9934d912a4
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJTVUIiOiJjOGFjMDQwZS1hMmVhLTRkYmYtOWJmMS04Y2MyYmUxNmNhZjIiLCJVTkFNRSI6IkxpbnRvbiIsImlhdCI6MTcxODYxMzQ0MiwiZXhwIjoxNzE4NjE3MDQyfQ.3nrxaMcDHD_it952--pYtCqhKqRxq81l4tRR1BuO5Qg
+Content-Type: application/json
+
+{
+    "Tourname":"Bonefire adventures",
+    "Tourimage":"https://cdn.pixabay.com/photo/2020/12/03/08/05/giraffe-5799824_640.jpg",
+    "TDestination":"Maasai Mara",
+    "TDescription":"Experience nature at its best",
+    "TPrice":"35000"
+}
+
+####
+
+ POST  http://localhost:4001/users/login
+ Content-Type: application/json
+
+ {
+      "EMAIL": "lintonli162@gmail.com",
+    "PASSWORD": "Lint@123"
+ }
+
+###
+ POST  http://localhost:4001/users/register
+ Content-Type: application/json
+
+ {
+      "NAME": "Linton",
+    "EMAIL": "lintonli162@gmail.com",
+    "PASSWORD": "Lint@123",
+    "ROLE":"ADMIN"
+ }
+
+#####
+POST  http://localhost:4001/hotels
+Content-Type: application/json
+
+{
+    "Hotelname":"Mara Frontier",
+    "Hotelimage":"https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_960_720.jpg",
+    "Hlocation":"Sekenani Camp",
+    "TourId":"491b239d-5e7a-4d7d-98cd-ed9934d912a4"
+
+}
+###
+GET  http://localhost:4001/hotels
+###
+GET  http://localhost:4001/hotels/hotel/6d6f4f47-f40f-40e3-8c97-bde4efea2d93
+token:
+###
+
+GET  http://localhost:4001/hotels/tour/491b239d-5e7a-4d7d-98cd-ed9934d912a4
+token:
+###
+DELETE http://localhost:4001/hotels/ced279f7-8521-4e4c-b859-4724eea7a8ad
+token:
+
+####
+PATCH http://localhost:4001/hotels/491b239d-5e7a-4d7d-98cd-ed9934d912a4
+token:
+Content-Type: application/json
+
+{
+    "Hotelname":"Mara Gates",
+    "Hotelimage":"https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_960_720.jpg",
+    "Hlocation":"Sekenani Camp",
+    "TourId":"491b239d-5e7a-4d7d-98cd-ed9934d912a4"
+
+}
