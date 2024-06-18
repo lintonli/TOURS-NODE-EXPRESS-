@@ -57,6 +57,9 @@ Content-Type: application/json
     "ROLE":"USER"
  }
 
+####
+DELETE  http://localhost:4001/users/8ede981c-c9d5-45f5-a2b3-1d6108e84112
+
 #####
 POST  http://localhost:4001/hotels
 Content-Type: application/json
