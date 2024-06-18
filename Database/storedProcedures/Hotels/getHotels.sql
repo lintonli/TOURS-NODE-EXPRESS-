@@ -3,5 +3,5 @@ GO
 CREATE OR ALTER PROCEDURE getHotels
 AS
 BEGIN
-SELECT * FROM Hotels;
+SELECT * FROM Hotels WHERE isDeleted = 0;
 END;

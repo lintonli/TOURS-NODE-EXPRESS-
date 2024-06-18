@@ -42,8 +42,8 @@ Content-Type: application/json
  Content-Type: application/json
 
  {
-      "EMAIL": "lintonli162@gmail.com",
-    "PASSWORD": "Lint@123"
+      "EMAIL": "joe@gmail.com",
+    "PASSWORD": "Jona@123"
  }
 
 ###
@@ -51,10 +51,10 @@ Content-Type: application/json
  Content-Type: application/json
 
  {
-      "NAME": "Linton",
-    "EMAIL": "lintonli162@gmail.com",
-    "PASSWORD": "Lint@123",
-    "ROLE":"ADMIN"
+      "NAME": "Jonathan",
+    "EMAIL": "joe@gmail.com",
+    "PASSWORD": "Jona@123",
+    "ROLE":"USER"
  }
 
 #####
@@ -93,3 +93,41 @@ Content-Type: application/json
     "TourId":"491b239d-5e7a-4d7d-98cd-ed9934d912a4"
 
 }
+
+####
+POST http://localhost:4001/booking
+Content-Type: application/json
+
+{
+    "userId":"8ede981c-c9d5-45f5-a2b3-1d6108e84112",
+    "tourId":"491b239d-5e7a-4d7d-98cd-ed9934d912a4",
+    "hotelId":"6d6f4f47-f40f-40e3-8c97-bde4efea2d93",
+    "bstartdate":"20/6/2024",
+    "benddate":"30/6/2024",
+    "bookingdate":"18/6/2024",
+    "bstatus":"Booked"
+}
+
+###
+GET http://localhost:4001/booking/bookings
+
+
+###
+GET  http://localhost:4001/booking/booking/688659de-e567-4ec4-b74f-6a85003b8170
+
+### 
+PATCH  http://localhost:4001/booking/6ac482c7-31d6-45a7-a04d-16420820d18a
+Content-Type: application/json
+
+{
+    "userId":"8ede981c-c9d5-45f5-a2b3-1d6108e84112",
+    "tourId":"491b239d-5e7a-4d7d-98cd-ed9934d912a4",
+    "hotelId":"6d6f4f47-f40f-40e3-8c97-bde4efea2d93",
+    "bstartdate":"20/6/2024",
+    "benddate":"25/6/2024",
+    "bookingdate":"1/6/2024",
+    "bstatus":"Booked"
+}
+
+###
+DELETE http://localhost:4001/booking/a2a21e26-8d1d-4a1b-b82e-53f192d0b98e

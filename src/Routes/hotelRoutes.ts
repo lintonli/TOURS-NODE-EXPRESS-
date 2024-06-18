@@ -3,8 +3,8 @@ import { addHotel, deleteHotel, getHotel, getHotelbyTour, getHotels, updateHotel
 import { verifyTokens } from "../middlewares";
 const hotelRoute = Router()
 
-hotelRoute.get("",getHotels)
-hotelRoute.get("/hotel/:id", verifyTokens, getHotel)
+hotelRoute.get("",getHotels);
+hotelRoute.get("/hotel/:id", verifyTokens, getHotel);
 hotelRoute.get("/tour/:id", verifyTokens, getHotelbyTour);
 hotelRoute.post("", verifyTokens, addHotel);
 hotelRoute.patch("/:id", verifyTokens, updateHotel);
